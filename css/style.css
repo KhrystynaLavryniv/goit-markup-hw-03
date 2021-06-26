@@ -334,9 +334,7 @@ ul {
   width: calc((100% - 30 * 3) \3);
   margin-left: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-  border: 1px solid #eeeeee;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-title {
