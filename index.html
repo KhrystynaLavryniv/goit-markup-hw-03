@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Студия</title>
 </head>
@@ -44,7 +47,7 @@
             <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
             <button class="hero-button" type="button">Заказать услугу</button>
         </section>
-        <section class="preference">
+        <section class="preference-section">
             <div class="container">
                 <h2 hidden>Наше преимущество</h2>
                 <ul class="preference-list">
@@ -69,8 +72,8 @@
                 </ul>
             </div>
         </section>
-        <section class="work">
-            <div class="work-container">
+        <section class="work-section">
+            <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class="work-list-item">
@@ -85,29 +88,56 @@
                 </ul>
             </div>
         </section>
-        <section class="team">
-            <div class="team-container">
+        <section class="team-section">
+            <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
-                        <img class="team-img" src="./image/Product-Designer.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <h3 class="employee">Игорь Демьяненко</h3>
-                        <p class="specialty">Product Designer</p>
+                        <article class="card">
+                            <div class="card-thumb">
+                                <img src="./image/Product-Designer.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                            </div>
+                            <div class="card-component">
+                                <h3 class="employee">Игорь Демьяненко</h3>
+                                <p class="specialty">Product Designer</p>
+                            </div>
+                        </article>
                     </li>
+
                     <li class="team-list-item">
-                        <img class="team-img" src="./image/Frontend-Developer.jpg" alt="Ольга Репина" width="270" height="260">
-                        <h3 class="employee">Ольга Репина</h3>
-                        <p class="specialty">Frontend Developer</p>
+                        <article class="card">
+                            <div class="card-thumb">
+                                <img  src="./image/Frontend-Developer.jpg" alt="Ольга Репина" width="270" height="260">
+                            </div>
+                            <div class="card-component">
+                                <h3 class="employee">Ольга Репина</h3>
+                                <p class="specialty">Frontend Developer</p>
+                            </div>
+                        </article>
                     </li>
+
                     <li class="team-list-item">
-                        <img class="team-img" src="./image/Marketing.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <h3 class="employee">Николай Тарасов</h3>
-                        <p class="specialty">Marketing</p>
+                        <article class="card">
+                            <div class="card-thumb">
+                                <img src="./image/Marketing.jpg" alt="Николай Тарасов" width="270" height="260">
+                            </div>
+                            <div class="card-component">
+                                <h3 class="employee">Николай Тарасов</h3>
+                                <p class="specialty">Marketing</p>
+                            </div>
+                        </article>
                     </li>
+
                     <li class="team-list-item">
-                        <img class="team-img" src="./image/UI-Designer.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <h3 class="employee">Михаил Ермаков</h3>
-                        <p class="specialty">UI Designer</p>
+                        <article class="card">
+                            <div class="card-thumb">
+                                <img class="team-img" src="./image/UI-Designer.jpg" alt="Михаил Ермаков" width="270" height="260">
+                            </div>
+                            <div class="card-component">
+                                <h3 class="employee">Михаил Ермаков</h3>
+                                <p class="specialty">UI Designer</p>
+                            </div>
+                        </article>
                     </li>
                 </ul>
             </div>
@@ -115,7 +145,7 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container">
             <a class="logo" href="/index.html" lang="en"><span class="part-logo">Web</span>Studio</a>
             <address>
                 <ul class="footer-list">
