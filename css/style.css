@@ -7,6 +7,8 @@
   --portfolio-main-color: #212121;
   --text-color: #757575;
   --button-color: #f5f4fa;
+  --main-padding: 94px;
+  --main-margin: 30px;
 }
 body {
   font-weight: 400;
@@ -129,7 +131,7 @@ ul {
 
 .hero-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: var(--main-margin);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -161,20 +163,22 @@ ul {
 }
 /* ======preference====== */
 
-.preference-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.preference-section,
+.team-section,
+.portfolio-section {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
 }
 .preference-list {
   display: flex;
   list-style: none;
 }
 .preference-list-item {
-  width: calc(100% / 4 - 30px);
+  width: calc(100% / 4 - var(--main-margin));
 }
 
 .preference-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--main-margin);
 }
 .preference-title {
   margin-bottom: 10px;
@@ -202,21 +206,17 @@ ul {
 .work-list {
   display: flex;
   list-style: none;
-  padding-bottom: 94px;
-  margin: 0;
+  padding-bottom: var(--main-padding);
+  margin-left: calc(var(--main-margin) * -1);
 }
 .work-list-item {
-  width: calc(100% / 3 - 30px);
-}
-.work-list-item:not(:last-child) {
-  margin-right: 30px;
+  width: calc(100% / 3 - var(--main-margin));
+  margin-left: var(--main-margin);
 }
 
 /* =====our team===== */
 
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
@@ -228,12 +228,12 @@ ul {
 }
 .team-list {
   display: flex;
-  margin-left: -30px;
+  margin-left: calc(var(--main-margin) * -1);
   list-style: none;
 }
 .team-list-item {
-  margin-left: 30px;
-  width: calc(100% / 4 - 30px);
+  margin-left: var(--main-margin);
+  width: calc(100% / 4 - var(--main-margin));
 }
 .card-component {
   padding-top: 30px;
@@ -286,11 +286,6 @@ address {
 }
 /* portfolio section */
 
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .button-list {
   display: flex;
   justify-content: center;
@@ -324,13 +319,13 @@ address {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-left: -30px;
+  margin-left: calc(var(--main-margin) * -1);
   list-style: none;
 }
 .portfolio-list-item {
-  width: calc((100% - 30 * 3) \3);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  width: calc(100% / 3 - var(--main-margin));
+  margin-left: var(--main-margin);
+  margin-bottom: var(--main-margin);
   border-bottom: 1px solid #eeeeee;
 }
 .portfolio-content {
