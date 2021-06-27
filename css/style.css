@@ -37,6 +37,7 @@ ul {
 .img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -58,17 +59,19 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .header-section .container {
   display: flex;
   align-items: center;
 }
+
 .header-section {
   border-bottom: 1px solid #ececec;
   background-color: var(--secondary-color);
 }
 
 .logo {
-  margin-right: 92px;
+  margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -76,25 +79,33 @@ ul {
   line-height: 1.19;
   text-decoration: none;
 }
+
 .part-logo {
   color: var(--color-accent);
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
+
 .navigation-list {
   display: flex;
   list-style: none;
 }
-.navigation-list-item-link {
+
+.navigation-list-item-link,
+.header-list .mail-link,
+.header-list .tel-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .list-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .navigation-list-item-link,
 .mail-link,
 .tel-link {
@@ -108,7 +119,7 @@ ul {
 
 .header-list .mail-link,
 .header-list .tel-link {
-  display: block;
+  /* display: block; */
   color: var(--text-color);
 }
 
@@ -174,6 +185,7 @@ ul {
 .hero-button:focus {
   background-color: #188ce8;
 }
+
 /* ======preference====== */
 
 .preference-list {
@@ -202,10 +214,12 @@ ul {
 
 /* ======work======= */
 
+.work-section {
+  padding-top: 0;
+}
+
 .work-title {
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -214,7 +228,6 @@ ul {
 .work-list {
   display: flex;
   list-style: none;
-  padding-bottom: var(--main-padding);
   margin-left: calc(var(--main-margin) * -1);
 }
 
@@ -245,6 +258,10 @@ ul {
 .team-list-item {
   margin-left: var(--main-margin);
   width: calc(100% / 4 - var(--main-margin));
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-radius: 4px;
 }
 
 .card-component {
@@ -256,13 +273,16 @@ ul {
   font-weight: 500;
   font-size: 16px;
 }
+
 .specialty {
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
   color: var(--text-color);
 }
+
 /* ====footer====== */
+
 address {
   margin-top: 20px;
 }
@@ -335,6 +355,7 @@ address {
   flex-wrap: wrap;
   margin-top: 50px;
   margin-left: calc(var(--main-margin) * -1);
+  margin-bottom: calc(var(--main-margin) * -1);
   list-style: none;
 }
 
@@ -343,6 +364,8 @@ address {
   margin-left: var(--main-margin);
   margin-bottom: var(--main-margin);
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-content {
